@@ -5,5 +5,4 @@
  * @author bardeaueva
  *
  */
-package main;
-
+package personnages;

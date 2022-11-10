@@ -1,16 +1,16 @@
 /**
  * 
  */
-package main;
+package histoires;
 
 /**
  * @author bardeaueva
  *
  */
-public class Main {
+public class MonHistoire {
 	
 	public static void main(String[] args) {
-		System.out.println("Test pull Git");
+		System.out.println("test");
 	}
 
 }
