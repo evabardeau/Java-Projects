@@ -33,7 +33,7 @@ public class Ronin extends Humain{
 			this.gagnerArgent(montantGagne);
 			yakuza.perdreArgent(montantGagne);
 			this.honneur++;
-			this.parler("Je t'ai vaincu  " +yakuza.getNom() + " du  clan " + yakuza.getClan() + " !");
+			this.parler("Je t'ai vaincu  " + yakuza.getNom() + " du  clan " + yakuza.getClan() + " !");
 		
 		}
 		else {

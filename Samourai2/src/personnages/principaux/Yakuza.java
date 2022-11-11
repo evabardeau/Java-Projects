@@ -19,9 +19,10 @@ public class Yakuza extends Humain {
 		this.reputation = 0;
 	}
 	
-	public void extorquer(Commercant commercant, int montant) {
-		commercant.perdreArgent(montant);
-		this.gagnerArgent(montant);
+	public void extorquer(Commercant commercant) {
+		int montantExtorque = commercant.getArgent();
+		commercant.perdreArgent(montantExtorque);
+		this.gagnerArgent(montantExtorque);
 		this.reputation++;
 		this.parler("Hehe, je l'ai bien plumé ce commerçant.");
 	}
@@ -52,6 +53,12 @@ public class Yakuza extends Humain {
 	 */
 	public int getReputation() {
 		return reputation;
+	}
+	
+	@Override
+	public void direBonjour() {
+		String texte = "Bonjour, je m'appelle " + this.getNom() + " et j'appartiens au clan " + this.clan + ".";
+		parler(texte);
 	}
 
 	
