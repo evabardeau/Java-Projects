@@ -8,14 +8,14 @@ import java.util.Random;
  * @author bardeaueva
  *
  */
-public abstract class Pokemon {
+public class Pokemon0 {
 	private String nom;
 	private int hp; 
 	private int niveau;
 	private int atk;
 	static Random rand = new Random();
 	
-	public Pokemon(String nom) {
+	public Pokemon0(String nom) {
 		
 		this.nom = nom;
 		this.niveau = rand.nextInt(11)+1;
@@ -65,9 +65,20 @@ public abstract class Pokemon {
 	
 	
 	
-	public abstract void attaquer(Pokemon p);
+	public void attaquer(Pokemon0 p) {
+		System.out.println(this.getNom() + ", à l'attaque !");
+		System.out.println("-" + this.getAtk());
+		
+		if (p.hp < this.atk) {
+			p.hp = 0;
+			
+		}
+		else{
+			p.hp -= this.atk;
+		}
+		
+	}
 	
-	public abstract void subir(Pokemon p);
 	
 	
 	public String toString() {
