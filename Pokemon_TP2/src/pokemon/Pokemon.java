@@ -10,17 +10,19 @@ import java.util.Random;
  */
 public abstract class Pokemon {
 	private String nom;
-	private int hp; 
+	protected int hp; 
 	private int niveau;
 	private int atk;
 	static Random rand = new Random();
+	private TypePokemon type;
 	
-	public Pokemon(String nom) {
+	public Pokemon(String nom, TypePokemon type) {
 		
 		this.nom = nom;
 		this.niveau = rand.nextInt(11)+1;
 		this.hp = 2 * this.niveau; 
 		this.atk = (this.niveau / 2) + 1;
+		this.type = type;  
 		
 	}
 	
@@ -82,4 +84,12 @@ public abstract class Pokemon {
 	public void log(String message) {
 		System.out.println(prefixe() + message);
 	}
+
+	/**
+	 * @return the type
+	 */
+	public TypePokemon getType() {
+		return type;
+	}
+	
 }

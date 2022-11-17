@@ -14,6 +14,7 @@ public class Pokemon0 {
 	private int niveau;
 	private int atk;
 	static Random rand = new Random();
+	private String type;
 	
 	public Pokemon0(String nom) {
 		
@@ -82,7 +83,7 @@ public class Pokemon0 {
 	
 	
 	public String toString() {
-		return this.nom  + " :\nNIV : " + this.niveau + "\nHP : " + this.hp + "\nATK : " + this.atk +'\n';
+		return this.nom  + " :\nNIV : " + this.niveau + "\nHP : " + this.hp + "\nATK : " + this.atk +"\nTYPE : " + this.type + '\n';
 		
 	}
 	
