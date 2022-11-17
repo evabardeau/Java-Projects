@@ -5,6 +5,7 @@ package histoires;
 
 import personnages.Humain;
 import personnages.principaux.*;
+import personnages.secondaires.Ninja;
 
 /**
  * @author bardeaueva
@@ -34,6 +35,10 @@ public class MonHistoire {
 		Samourai musaichi = new Samourai("Akimoto" , "thé" , 20, "Miyamoto");
 		musaichi.direBonjour();
 		musaichi.boire("sake");
+		
+		
+		Ninja ninja = new Ninja("Makoto", "thé Oolong", 1000, "Thiefs");
+		ninja.direBonjour();
 		
 	}
 

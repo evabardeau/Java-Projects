@@ -39,13 +39,21 @@ public class Humain {
 		this.argent += montant; 
 	}
 	
-	public void perdreArgent(int montant) {
+	public int perdreArgent(int montant) {
+		
+		int montantDonne = 0;
+		
 		if (montant > this.argent) {
+			montantDonne = argent;
 			this.argent = 0;
+			
 		}
+		
 		else {
 			this.argent -= montant; 
 		}
+		
+		return montantDonne; 
 	}
 	
 	/**

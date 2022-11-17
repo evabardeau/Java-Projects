@@ -49,6 +49,13 @@ public class Yakuza extends Humain {
 	}
 
 	/**
+	 * @param clan the clan to set
+	 */
+	public void setClan(String clan) {
+		this.clan = clan;
+	}
+
+	/**
 	 * @return the reputation
 	 */
 	public int getReputation() {
